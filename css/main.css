@@ -1,0 +1,12 @@
+.box{
+width: 200px;
+height: 500px;
+background-color: rgb(87, 90, 92);
+position: relative;
+}
+.title{
+    transform: rotate(90deg);
+    left: 100px;
+    top: 300px;
+    position: absolute;
+}
