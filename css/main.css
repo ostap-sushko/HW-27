@@ -1,12 +1,57 @@
+
+
 .box{
-width: 200px;
-height: 500px;
-background-color: rgb(87, 90, 92);
-position: relative;
+width: 500px;
+height: 300px;
+background-color: gray;
+position: fixed;
+transform: rotate(90deg);
+left: -320px;
+transition-property: left;
+transition-duration: 200ms;
+
 }
+.box:hover{
+    left: -100px;
+    .title{
+        visibility: hidden;
+    }
+}
+
 .title{
-    transform: rotate(90deg);
-    left: 100px;
-    top: 300px;
-    position: absolute;
+color: white;
+font-size: 50px;
+text-align: center;
+font-style: italic;
+}
+
+.text{
+color: white;
+font-size: 20px;
+transition-property: color;
+transition-duration: 200ms;
+
+}
+.text:hover{
+    color: yellow;
+}
+.text::before{
+content: "";
+width: 20px;
+height: 20px;
+background-color:
+tomato;
+display: inline-flex;
+margin-right: 20px;
+}
+
+.list{
+transform: rotate(270deg);
+position: absolute;
+bottom: 20px;
+right: 200px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+
 }
